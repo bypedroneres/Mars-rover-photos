@@ -1,0 +1,74 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #1a1a1a;
+    color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+main h1 {
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+main h2 {
+    font-size: 15px;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.photo-container {
+    padding: 0.5rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.photo-container:hover {
+    transform: scale(1.05);
+}
+
+.photo-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    filter: grayscale(1);
+}
+
+.photo-container img:hover {
+    filter: grayscale(0);
+}
+
+.photo-details {
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    font-size: 10px;
+}
+
+.behance {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 0px;
+    
+  }
+  
+  .behance img {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    
+  }
